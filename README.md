@@ -16,3 +16,19 @@
    We will come to cover the img tag with it's attributes by tommorrow, along with other tags and some of their attributes..
 
    ## HAPPY CODING!!
+
+2. Day 5 - We covered...
+
+   - How to view the source code of any website.
+   - Most commonly used HTML tags and elements.
+   - HTML Phrase and text formatting tags.
+   - Purpose of HTML header element nested tags.
+   - Adding comments and it's purpose in an HTML file.
+   - HTML layouts - Using block and inline level elements...
+
+   ## Just a quick one...
+
+   Try playing along with the codes and get to know how each tool behaves. Get yourself to know the various tools at your disposal
+   so that when you need to achieve an effect, you will have the knowledge of which to use...
+
+   ## HAPPY CODING!!
