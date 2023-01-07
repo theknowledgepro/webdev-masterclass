@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="HTML, Meta Tags, Metadata WebDev, Website Development Tutorials, Skill Up 2023, " />
+    <meta name="description" content="Learning about HTML" />
+    <meta name="revised" content="webDev, 3/7/2023" />
+    <!-- <meta http-equiv="refresh" content="5" />
+    <meta http-equiv="refresh" content="5; url=./index.html" /> -->
+    <meta name="author" content="Chidera Promise Ajibo" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="text/JavaScript">
+        function Hello(){
+         alert("Hello, World");
+        }
+    </script>
+    <title>Day - 5 WebDev 1.0</title>
+</head>
+
+<body>
+
+    <h2>Commonly Used HTML Elements</h2>
+    <hr />
+    <!-- =================================== INTRODUCTION ================================================== -->
+    <p>
+        As discussed earlier, HTML actually structures a web page.
+        Web pages basically are made up of texts, multimedia (images, audios, videos, gifs and other multimedia types),
+        forms (used to collect input data from the website visitors), tables and hyperlinks <a name="top"></a> (used to
+        link web pages
+        togettehr, which is actually one of the
+        original intent of the website at first).
+    </p>
+    <p>
+        Now every HTML elements and tags are used to achieve the above purpose. This web page introduces us to most of
+        these tags, elements and how they are used.
+    </p>
+    <p>
+        <mark>
+            <b><em>NOTE:</em></b>
+            This tutorial today does not exhaust the list of HTML tags.
+            <br />
+            It is just an introduction. You will come to learn more tags and what they serve to do in a web page as you
+            work with HTML and need to achieve some
+            effects or kind of layouts on your web page.
+        </mark>
+    </p>
+    <p>
+        Also do not bother about the styling of this web page. There's no CSS for styling done yet. At the mean time,
+        this is just plain HTML, and this was how ugly websites used to be then before the advent of CSS.
+        The purpose of this web page is to get you familiar with most of the HTML tags we would be working with.
+        Do well to play with the codes...
+        <br />
+        Clone the repo of this work on github and view it ...
+        <br />
+        Do well to also read the comments in the source code of this website. They give hints and some exposure to
+        what's happenong all over...
+        Try writing codes to see how it all works...
+        #HAPPY CODING!!!
+    </p>
+
+    <!-- 
+        THIS IS A MULTI-LEVEL COMMENT ON THIS HTML SOURCE CODE...
+        This div tag is a block level element that kind of divides the web page into several sections 
+        This first div section deals with the image tag for displaying images...
+    -->
+    <hr />
+    <!-- ======================================= 1. HTML IMAGE TAG==========================================-->
+    <div>
+        <h3>1. HTML Images - <em>the img tag</em></h3>
+        <ul>
+            <li>
+                HTML images have the <code>src</code>
+                attribute which is used to get the source of the
+                image to display on the portion of the webpage specified.
+            </li>
+            <li>
+                They also have the width and height attribute which also helps to define the size of the image.
+            </li>
+            <li>
+                The width and height could be written in numbers or in pixels which we will come to learn of in CSS.
+            </li>
+            <li>
+                They also have the <em>alt</em> attribute which is used to tell more about the image (for browsers that
+                could not load the image, e.g due to bad network or phone memory like we have in the button phones we
+                all
+                once used to surf the net).
+            </li>
+            <li>
+                You can also insert images from another website or from the internet by
+                simply setting the src value of the img tag to the url of the desired
+                image.
+            </li>
+        </ul>
+
+        <img src="./assets/images/image-1.jpg" alt="This text tells me more about the image!" />
+        <img src="./assets/images/image-1.jpg" width="200px" height="200px" />
+        <img src="./assets/images/image-1.jpg" width="300px" height="400px" />
+        <img alt="This image is loaded from the net. Pls turn on your data to view this image"
+            src="https://media.istockphoto.com/id/1383889737/photo/i-love-this-story.jpg?b=1&s=170667a&w=0&k=20&c=o7uwr0wnUTIh7-qOupLMoNR5lxAZlVB73chSG37w7ww="
+            width="400" height="400" />
+    </div>
+
+    <hr />
+    <!-- ======================================== 2. HTML TABLES============================================-->
+    <div>
+        <h3>2. HTML Tables - <em>the table tag</em></h3>
+        <ul>
+            <li>
+                The HTML tables allow web authors to arrange data like text, images, links, other tables,
+                etc. into rows and columns of cells. The HTML tables are created using the table tag in which the tr tag
+                is used to create table rows and td tag is used to create data cells.
+            </li>
+            <li>
+                There are two attributes called cellpadding and cellspacing which you will use to adjust the
+                white space in your table cells. The cellspacing attribute defines the width of the border,
+                while cellpadding represents the distance between cell borders and the content within a
+                cell.
+            </li>
+            <li>
+                You will use colspan attribute if you want to merge two or more columns into a single
+                column. Similar way you will use rowspan if you want to merge two or more rows.
+            </li>
+            <li>
+                Try playing with the table atributes to see how they affect the visual appearance of the table
+            </li>
+        </ul>
+
+        <!--
+            THIS IS A MULTI LEVEL COMMENT
+            This table looks ugly and unformatted in the browser!
+            Not to worry, when we get into CSS you will appreciate this elements!  
+            === THE RED COLOR IS DUE TO THE ATTRIBUTE BEING DEPRECATED... IT IS ADVISED TO USE CSS...  
+        -->
+        <table border="4" cellpadding="5" cellspacing="5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ajibo Chidera</td>
+                    <td>#500, 000</td>
+                </tr>
+                <tr>
+                    <td>Nwizu Daniel</td>
+                    <td>#500, 000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br /><br />
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Row 1 Cell 1</td>
+                    <td>Row 1 Cell 2</td>
+                    <td>Row 1 Cell 3</td>
+                </tr>
+                <tr>
+                    <td>Row 2 Cell 2</td>
+                    <td>Row 2 Cell 3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Row 3 Cell 1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr />
+    <!-- ======================================== 3. HTML LISTS============================================-->
+    <div>
+        <h3>3. HTML Lists - <em>the list tag</em></h3>
+        <!--
+            HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. 
+            Lists may contain:
+                <ul> - An unordered list. This will list items using plain bullets.
+                <ol> - An ordered list. This will use different schemes of numbers to list your items.
+                <dl> - A definition list. This arranges your items in the same way as they are arranged in a dictionary.
+            -->
+        <h4>UNORDERED LISTS.</h4>
+        <p>
+            An unordered list is a collection of related items that have no special order or sequence.
+            This list is created by using HTML ul tag. Each item in the list is marked with a bullet. e.g:
+        </p>
+        <ul>
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ul>
+        <p>
+            You can use type attribute for ul tag to specify the type of bullet you like. By default,
+            it is a disc. Following are the possible options:
+        </p>
+        <p>
+            The bullet type can also be customized using CSS.
+        </p>
+        <ul type="circle">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ul>
+        <ul type="disc">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ul>
+        <ul type="square">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ul>
+
+        <br />
+        <h4>ORDERED LISTS.</h4>
+
+        <p>
+            You can use type attribute for ol tag to specify the type of numbering you like. By
+            default, it is a number. Following are the possible options:
+        </p>
+        <ol type="1">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ol>
+        <ol type="I">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ol>
+        <ol type="i">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ol>
+        <ol type="A">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ol>
+        <ol type="a">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ol>
+        <p>
+            You can use start attribute for ol tag to specify the starting point of numbering you
+            need. Following are the possible options:
+        </p>
+        <ol type="a" start="7">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ol>
+        <ol type="I" start="7">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ol>
+        <ol type="1" start="3">
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+        </ol>
+
+        <br />
+        <h3>DEFINITION LISTS</h3>
+        <p>
+            HTML supports a list style which is called definition lists where entries are
+            listed like in a dictionary or encyclopedia. The definition list is the ideal way to present a
+            glossary, list of terms, or other name/value list. For example
+        </p>
+        <dl>
+            <dt><b>HTML</b></dt>
+            <dd>This stands for Hyper Text Markup Language</dd>
+
+            <dt><b>HTTP</b></dt>
+            <dd>This stands for Hyper Text Transfer Protocol</dd>
+
+            <dt><b>URL</b></dt>
+            <dd>This stands for Uniform Resource Locator</dd>
+        </dl>
+    </div>
+    <hr />
+    <!-- ======================================== 4. HTML HYPERLINKS========================================-->
+    <div>
+        <h3>4. HTML Hyper Links - <em>the anchor (a) tag</em></h3>
+        <ul>
+            <li>
+                A webpage can contain various links that take you directly to other pages and even specific
+                parts of a given page. These links are known as hyperlinks
+            </li>
+            <li>
+                Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and
+                images. Thus you can create hyperlinks using text or images available on a webpage, by simply nesting
+                the text, image or any other tag with the anchor tag.
+            </li>
+            <li>
+                A link is specified using HTML a tag. This tag is called anchor tag and anything between the opening a
+                tag and the closing a tag becomes part of the link and a user can click that part to reach to the linked
+                document. Let's try following example which links <i>http://www.w3schools.com</i> at your page.
+            </li>
+            <a href="http://www.w3schools.com" target="_self">Click me to visit w3Schools!</a>
+            <li>
+                The anchor tag is not only used to link external websites. They can be used to navigate from one page to
+                another on our own website by simply providing the relative path to the respective file we want to vie,
+                be it another html file or an image file, or any sort of file that can be displayed by the browser. For
+                example, let's visit the about page...
+                <a href="about.html" target="_blank">About Page</a> |
+                <a href="assets/images/image-1.jpg" target="_blank">Opens an image</a>
+            </li>
+            <li>
+                We have used target attribute in our previous example. This attribute is used to specify
+                the location where linked document is opened. Following are the possible options:
+            </li>
+            <a href="index.html" target="_blank">Opens in New</a> |
+            <a href="index.html" target="_self">Opens in Self</a> |
+            <a href="index.html" target="_parent">Opens in Parent</a> |
+            <a href="index.html" target="_top">Opens in Body</a>
+            <li>
+                You can create a link to a particular section of a given webpage by using name attribute. This is a
+                two-step process.
+                <p>
+                    First create a link to the place where you want to reach with-in a webpage and name it
+                    using a tag with a name attribute.
+                </p>
+                <p>
+                    Second step is to create a hyperlink to link the document and place where you want to reach as
+                    follows
+                    <a href="#top">Go to the Top</a>
+                </p>
+            </li>
+            <li>
+                You can create text link to make your PDF, or DOC or ZIP files downloadable. This is very
+                simple; you just need to give complete URL of the downloadable file and type the download attribute to
+                the anchor tag as follows:
+                <a download href="./assets/uploads/file.pdf">Download PDF File For Day FIVE Tutorials.</a>
+            </li>
+            <li>
+                Let's try linking an image to another file.
+                <br />
+                <a href="index.html" target="_top">
+                    <img src="./assets/images/image-2.jpg" height="100" width="100" alt="Example of image hyperlinks" />
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr />
+    <!-- ======================================== 5. HTML IFRAMES==========================================-->
+    <div>
+        <h3>5. HTML Iframes - <em>the iframe tag</em></h3>
+        <ul>
+            <li>
+                The iframe tag defines a rectangular region within the document in which the browser can display a
+                separate document, including scrollbars and borders. The src attribute is used to specify the URL of the
+                document that occupies the inline frame. The iframe below links to a youtube video.
+            </li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t0Q2otsqC4I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </ul>
+    </div>
+    <hr />
+    <!-- ======================================== 6.HTML FORMS=============================================-->
+    <p></p>
+    <div>
+        <h3>6. HTML Forms - <em>the form tag</em></h3>
+        <ul>
+            <li>
+                HTML Forms are required, when you want to collect some data from the site visitor. For example,
+                during user registration you would like to collect information such as name, email address, credit
+                card, etc.
+            </li>
+            <li>
+                A form will take input from the site visitor and then will post it to a back-end application.
+                The back-end application will perform required processing on the passed data based on defined business
+                logic inside the application.
+                We will work with this a lot in building our first oficial blog website!
+            </li>
+            <li>
+                There are various form elements available like text fields, textarea fields, drop-down menus, radio
+                buttons, checkboxes, etc.
+            </li>
+        </ul>
+        <form action="Script URL" method="GET|POST">
+            Form elements like input, textarea etc. will stay here. Below are some of them. Not styled though, but will
+            look so beautiful when CSS is applied.
+
+            <div>
+                First name: <input placeholder="Enter first name here" type="text" name="first_name" />
+            </div>
+            <br />
+            <div>
+                Last name: <input type="text" name="last_name" />
+            </div> <br />
+            <div>
+                Phone number: <input placeholder="Only numbers can be typed here" type="number" name="phone" />
+            </div> <br />
+            <div>
+                password: <input placeholder="Enter password here" type="password" name="password" />
+            </div>
+
+            <div>
+                <textarea placeholder="Enter some texts here" rows="5" cols="50" name="description"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="maths" value="on"> Maths
+                <input type="checkbox" name="physics" value="on"> Physics
+            </div>
+            <br />
+            <div>
+                <input type="radio" name="maths" value="on"> Maths
+                <input type="radio" name="physics" value="on"> Physics
+            </div>
+            <br />
+            <div>
+                <select name="dropdown">
+                    <option value="Maths" selected>Maths</option>
+                    <option value="Physics">Physics</option>
+                    <option value="French">French</option>
+                    <option value="English Language">English Language</option>
+                    <option value="Verbal Reasoning">Verbal Reasoning</option>
+                    <option value="Engineering Drawing">Engineering Drawing</option>
+                </select>
+            </div>
+            <br />
+            <p>Click on this button to run the JavaScript Fuction in the head tag...</p>
+            <input type="button" onclick="Hello();" name="ok" value="CLICK ME NOW!" />
+        </form>
+    </div>
+    <hr />
+    <!-- ======================================== 7.HTML AUDIO=============================================-->
+    <div>
+        <h3>7. HTML Audio tag</h3>
+        <p>
+            This is used for displaying and playing an audio file of various formats.
+        </p>
+        <ul>
+            <li>
+                The controls attribute allows the browser to offer controls option to the site visitor.
+                <audio controls>
+                    <source src="./assets/audios/audio-1.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+        </ul>
+    </div>
+    <hr />
+    <!-- ======================================== 7.HTML AUDIO=============================================-->
+    <div>
+        <h3>8. HTML Video tag</h3>
+        <p>Similar to the audio tags above</p>
+        <video width="400" height="350" controls src="./assets/videos/my-video.mp4"></video>
+    </div>
+    <hr />
+    <!-- ================================ 8 .HTML TEXT FORMATTING & PHRASE TAGS ==========================-->
+    <div>
+        <h3>9. HTML TEXT FORMATING & PHRASE TAGS</h3>
+        <p>If you use a word processor, you must be familiar with the ability to make text bold,
+            italicized, or underlined; Now, the same effect can be gotten in HTML through some HTML tags we would see
+            now.
+        </p>
+
+        <h4>Below is the list of some of these tags:</h4>
+
+        <ol>
+            <li>
+                <div><b>Bold tag</b> <span>: Used to bolden a text.</span></div>
+                <br />
+                <div>e.g How about a <b>DISCOUNT</b> of 20% this January?</div>
+            </li>
+            <br />
+            <li>
+                <b>Italic tag</b> <span>: Used to italicize a text.</span><br />
+                <div>e.g How about a <i>DISCOUNT</i> of 20% this January?</div>
+            </li>
+            <br />
+            <li>
+                <b>Underline tag</b> <span>: Used to underline a text.</span><br />
+                <div>e.g How about a <u>DISCOUNT</u> of 20% this January?</div>
+            </li>
+            <br />
+            <li>
+                <b>Superscript Text</b> <span>: Used to strike through a text.</span><br />
+                <div>e.g What's the answer to 2<sup>4</sup> of 20%?</div>
+            </li>
+            <br />
+            <li>
+                <b>Subscript Text</b> <span>: Used to strike through a text.</span><br />
+                <div>e.g Remember the H<sub>2</sub>O formula for water?</div>
+            </li>
+            <br />
+            <li>
+                <b>Smaller Text</b> <span>: Used to make a text small.</span><br />
+                <div>e.g This is a <small>small</small> text</div>
+            </li>
+            <br />
+            <li>
+                <b>Emphasized Text</b> <span>: Used to make emphasis on a text by some sort of italicizing and boldening
+                    text.</span><br />
+                <div>e.g This is an <em>Emphasized</em> text</div>
+            </li>
+            <br />
+            <li>
+                <b>Marked Text</b> <span>: Anything that appears with-in mark element, is displayed as marked with
+                    yellow ink..</span>
+                <br />
+                <div>e.g This is a <mark>marked</mark> text</div>
+            </li>
+            <li>
+                <b>Strong Text</b> <span>: Also used to lay emphasis on a text for boldeningn and increasing
+                    font-size</span>
+                <br />
+                <div>e.g This is a <strong>BOLD</strong> text</div>
+            </li>
+            <br />
+            <li>
+                <b>Text Direction</b> <span>: The bdo element stands for Bi-Directional Override and it is used to
+                    override the current text direction. Used especially for Arabic words.</span>
+                <br />
+                <div>e.g This direction <bdo dir="rtl">was changed from right to left</bdo></div>
+            </li>
+            <br />
+        </ol>
+    </div>
+</body>
+
+</html>
