@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 56px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+header .logo {
+    margin-left: 30px;
+    font-size: 24px;
+    font-weight: 800;
+    color: rgb(4, 172, 4);
+}
+
+header nav a {
+    text-decoration: none;
+    margin: 0px 5px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    color: rgb(4, 172, 4);
+    background-color: #eee;
+}
+
+section{
+    width: 100%;  
+    position: relative;  
+}
+.background{
+    background: url(../assets/images/business-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 550px;
+}
+
+section .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 550px;
+    width: 100%;
+    background: #0007;
+}
+.background .text{
+    z-index: 100;
+    color: #ffff;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.card-sections{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-sections .card{
+    overflow: hidden;
+    width: 30%;
+    height: 300px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    margin: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-sections .card img{
+    height:200px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.card-sections .card .text{
+    font-size: 16px;
+}
+.card-sections .card button{
+    width: 110px;
+    height: 45px;
+    cursor: pointer;
+    background: rgb(1, 182, 1);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+}
+.card-sections .card button:hover{
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+.card-sections .card img:hover{
+    transform: scale(1.1);
+}
