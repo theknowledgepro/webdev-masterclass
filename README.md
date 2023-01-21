@@ -32,3 +32,32 @@
    so that when you need to achieve an effect, you will have the knowledge of which to use...
 
    ## HAPPY CODING!!
+
+3. Day 6 - We covered...
+
+   - How to apply styling and design to HTML file.
+   - How to apply JavaScript to HTML file.
+   - HTML Deprecated tags.
+   - HTML Entities and character encoding.
+
+   ## HAPPY CODING!!
+
+4. Day 7 - We covered...
+
+   - What CSS means, its uses and syntax.
+   - Advantages of CSS in web development generally.
+   - How to apply CSS styling and design to a web page.
+   - Working with the CSS Syntax.
+
+   ## HAPPY CODING!!
+
+5. Day 8 - We covered...
+
+   - Various ways CSS Selectors can be defined for Styling.
+   - CSS Colors - Applying color styles to HTML elements
+   - CSS Measurement Units.
+   - Styling Backgrounds with CSS.
+   - Text Manipulations and Styling with CSS.
+   - Images Styling and Design with CSS.
+
+   ## HAPPY CODING!!
