@@ -1,0 +1,62 @@
+
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.demo{
+    margin: 80px 40px;
+    padding: 30px;
+    height: 300px;
+    width: 500px;
+    background-color: #eee;
+    border: 2px solid #ddd;
+    border-radius: 3px 20px 5px 7px;
+}
+.my-list{
+    list-style-type: square;
+    margin: 0;
+    padding: 0;
+}
+.point{
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.point::before{
+    content: '';
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: url(../assets/images/pin.jpeg) no-repeat center;
+    background-size: 20px 20px;
+    display: inline-block;
+}
+
+table{
+    border: 1px solid #ddd;
+    width: 500px;
+    background-color: #eee;
+    border-collapse: separate;
+    border-spacing: 5px;
+    border-radius: 5px;
+    margin-bottom: 200px;
+    empty-cells: hide;
+    caption-side:top;
+}
+td, th{
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 5px;
+}
+caption{
+    background-color: #eee;
+    padding: 6px;
+}

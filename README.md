@@ -59,5 +59,17 @@
    - Styling Backgrounds with CSS.
    - Text Manipulations and Styling with CSS.
    - Images Styling and Design with CSS.
+   - Coding of a basic web page.
+
+   ## HAPPY CODING!!
+
+6. Day 9 - We covered...
+
+   - CSS Borders Styling.
+   - CSS Margins & Padding.
+   - CSS Dimensions.
+   - CSS Lists Styling & Design.
+   - HTML Tables Styling Using CSS.
+   - Activity - Styling some HTML Elements.
 
    ## HAPPY CODING!!
